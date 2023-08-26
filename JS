@@ -161,7 +161,23 @@
         //홀수 짝수 구분해서 텍스트로 배열만들기
         console.log(arr.map(callbackfn))
 
-    </script>
 
+        const arr = [1,2,3];
+        function callbackfn(item) {
+            let result;
+            if (item%2===1) {
+                result = "홀수"
+                return "홀수"
+            } else {
+                result = "짝수"
+                return "짝수"
+            }
+            return result
+        }
+    
+        //console.log(callbackfn(10))
+
+
+    </script>
   </body>
 </html>
